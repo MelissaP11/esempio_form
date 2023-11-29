@@ -5,12 +5,18 @@
     <title>Esempio action</title>
 </head>
 <body>
-   <h1>Recupero i dati del form</h1> 
+   <h1>Saluto</h1> 
    <?php
-    $nome = $_GET["nome"];
+    $nome = $_GET["nome"]; //array associativo per PHP
     $cognome = $_GET["cognome"];
-    print("<p>Il tuo nome è: $nome</p>");
-    print("<p>Il tuo cognome è: $cognome</p>");
+    $sesso = $_GET ["sesso"];
+    if($sesso == "M") {// maschio 
+        print("Benvenuto $nome $cognome");
+    }else { //femmina
+        print("Benvenuta $nome $cognome");
+    }
+    //print("<p>Il tuo nome è: $nome</p>");
+    //print("<p>Il tuo cognome è: $cognome</p>");
    ?>
 </body>
 </html>
