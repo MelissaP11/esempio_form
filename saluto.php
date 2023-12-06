@@ -5,9 +5,9 @@
     $cognome = $_POST["cognome"];
     $sesso = $_POST["sesso"];
 
-    setcookie("nome",$nome,time()+60);
-    setcookie("cognome",$cognome ,time()+60);
-    setcookie("sesso",$sesso ,time()+60);
+    setcookie("nome",$nome,time()+1800);
+    setcookie("cognome",$cognome ,time()+1800);
+    setcookie("sesso",$sesso ,time()+1800);
 ?>
 <head>
     <meta charset="utf-8">
