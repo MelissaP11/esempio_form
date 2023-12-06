@@ -7,9 +7,15 @@
 <body>
    <h1>Saluto</h1> 
    <?php
+    session_start();
     $nome = $_POST["nome"]; //array associativo per PHP
     $cognome = $_POST["cognome"];
     $sesso = $_POST["sesso"];
+
+    $_SESSION["nome"]=$nome;
+    $_SESSION["cognome"] =$cognome;
+    $_SESSION["sesso"] =$sesso;
+
     if($sesso == "M") {// maschio 
         print("Benvenuto $nome $cognome");
     }else { //femmina
