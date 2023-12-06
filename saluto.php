@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="it">
 <?php
-session_start();
     $nome = $_POST["nome"]; //array associativo per PHP
     $cognome = $_POST["cognome"];
     $sesso = $_POST["sesso"];
 
     setcookie("nome",$nome,time()+300);
-    setcookie("cognome",$cognometime()+300);
-    setcookie("sesso",$sessotime()+300);
+    setcookie("cognome",$cognome ,time()+300);
+    setcookie("sesso",$sesso ,time()+300);
 ?>
 <head>
     <meta charset="utf-8">
