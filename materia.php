@@ -7,9 +7,8 @@
 <body>
    <h1>Saluto con materia</h1> 
    <?php
-   session_start();
-    $nome=$_SESSION["nome"];
-    $cognome=$_SESSION["cognome"];
+    $nome=$_COOKIE("nome");
+    $cognome=$_COOKIE("cognome");
     $materia = $_POST["materia"];
     
     print("Ciao $nome $cognome sono molto contento che la tua materia preferita sia: $materia");
